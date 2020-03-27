@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8324BE54242E7EA100800123 /* MKPointAnnotation+Obervable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324BE51242E7EA100800123 /* MKPointAnnotation+Obervable.swift */; };
+		8324BE55242E7EA100800123 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324BE52242E7EA100800123 /* EditView.swift */; };
+		8324BE56242E7EA100800123 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324BE53242E7EA100800123 /* MapView.swift */; };
+		8324BE59242E7F2000800123 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324BE58242E7F2000800123 /* Result.swift */; };
+		8324BE5B242E885500800123 /* CodableMKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324BE5A242E885500800123 /* CodableMKPointAnnotation.swift */; };
 		83A0206D23E1EB6400C6253E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0206C23E1EB6400C6253E /* AppDelegate.swift */; };
 		83A0206F23E1EB6400C6253E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0206E23E1EB6400C6253E /* SceneDelegate.swift */; };
 		83A0207123E1EB6400C6253E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0207023E1EB6400C6253E /* ContentView.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8324BE51242E7EA100800123 /* MKPointAnnotation+Obervable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation+Obervable.swift"; sourceTree = "<group>"; };
+		8324BE52242E7EA100800123 /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		8324BE53242E7EA100800123 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8324BE58242E7F2000800123 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8324BE5A242E885500800123 /* CodableMKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMKPointAnnotation.swift; sourceTree = "<group>"; };
 		83A0206923E1EB6400C6253E /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A0206C23E1EB6400C6253E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A0206E23E1EB6400C6253E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8324BE57242E7F2000800123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8324BE58242E7F2000800123 /* Result.swift */,
+				8324BE5A242E885500800123 /* CodableMKPointAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		83A0206023E1EB6400C6253E = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +75,12 @@
 		83A0206B23E1EB6400C6253E /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				8324BE57242E7F2000800123 /* Model */,
 				83A0206C23E1EB6400C6253E /* AppDelegate.swift */,
 				83A0206E23E1EB6400C6253E /* SceneDelegate.swift */,
+				8324BE52242E7EA100800123 /* EditView.swift */,
+				8324BE53242E7EA100800123 /* MapView.swift */,
+				8324BE51242E7EA100800123 /* MKPointAnnotation+Obervable.swift */,
 				83A0207023E1EB6400C6253E /* ContentView.swift */,
 				83A0207223E1EB6F00C6253E /* Assets.xcassets */,
 				83A0207723E1EB6F00C6253E /* LaunchScreen.storyboard */,
@@ -146,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8324BE5B242E885500800123 /* CodableMKPointAnnotation.swift in Sources */,
 				83A0206D23E1EB6400C6253E /* AppDelegate.swift in Sources */,
+				8324BE56242E7EA100800123 /* MapView.swift in Sources */,
+				8324BE55242E7EA100800123 /* EditView.swift in Sources */,
 				83A0206F23E1EB6400C6253E /* SceneDelegate.swift in Sources */,
+				8324BE59242E7F2000800123 /* Result.swift in Sources */,
+				8324BE54242E7EA100800123 /* MKPointAnnotation+Obervable.swift in Sources */,
 				83A0207123E1EB6400C6253E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +317,7 @@
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BucketList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +338,7 @@
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BucketList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
